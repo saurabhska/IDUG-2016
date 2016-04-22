@@ -14,10 +14,10 @@ object Db2WriteTwitter extends App{
    val SQL="insert into SSKA.TWITTERUSERS values (?)"
    val ps = con.prepareStatement(SQL)
        
-   val consumerKey = "C3WjW9fKRNRTt8RvibJkAgqv7";
-   val consumerSecret = "vI6HunFqBbmL6otD2AmuhBQN50vDo1PbyaH9OQk1EtKC2hyVFM";
-   val accessToken = "146839306-oF5YA7SZPIBeQ18Oz5Ufpy5awRisRMZ59xxtG4oK";
-   val accessTokenSecret = "uJ3wEupypfQ8r1dnwzhTGqI2h5B7dSTdb4KYv3S6Jhzkz";
+   val consumerKey = "<FILL>";
+   val consumerSecret = "<FILL>";
+   val accessToken = "<FILL>";
+   val accessTokenSecret = "<FILL>";
    System.setProperty("twitter4j.oauth.consumerKey", consumerKey)
    System.setProperty("twitter4j.oauth.consumerSecret", consumerSecret)
    System.setProperty("twitter4j.oauth.accessToken", accessToken)
