@@ -1,5 +1,4 @@
-# Apache-Spark
-Spark streaming to fetch tweets with specific hashtags, perform analytics and visualize them
+Collecting tweets with specific hashtags for IDUG, perform analytics and visualize them.
 
 # References
 http://pallavipriyadarshini.blogspot.com/
