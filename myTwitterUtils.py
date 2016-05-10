@@ -92,6 +92,7 @@ def getSubsetData(cleanedData):
 	subsetData['created_at'] = cleanedData['created_at']
 	subsetData['username'] = cleanedData['user']['name']
 	subsetData['screenname'] = cleanedData['user']['screen_name']
+	return subsetData
 
 class MyListener(StreamListener):
 	def on_data(self, data):
@@ -103,7 +104,7 @@ class MyListener(StreamListener):
 			print(subsetData)
 			print(type(subsetData))
 			print(cleanedData['text'])
-			mydbutils.insert('subsetTweetDump',json.loads(subsetData))
+			mydbutils.insert('subsetTweetDump',subsetData)
 		except BaseException as e:
 			print("Error on_data: %s" % str(e))
 		return True
